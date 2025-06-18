@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~TO-DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>ToDo List</h1>
+            <img src="/assets/list-img.png" alt="list-img" width="60px" height="50px">
+        </header>
+
+        <div class="listinput">
+            <form onsubmit="return false">
+                <input type="text" id="input" placeholder="Enter Your Task Here..." autofocus>
+                <button type="submit" id="inputbtn"><i class="fa-solid fa-plus"></i></button>
+            </form>
+        </div>
+
+        <div id="msg-box"></div>
+        <div class="list-container">
+            <ul id="inputlist"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
